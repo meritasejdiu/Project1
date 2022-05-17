@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="mycss.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stlesheet" href="js/bootstrap.min.js">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+   
+    
+        <header>
+            <div class=" first-class second-banner">
+            <nav class="navbar">
+                <div class="brand-title"> <img class="logo" src="img/Logo.png" alt="logo"></div>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <ul>
+                        
+                        <li> <a  href="Myhtml.html"  >Home</a></li>
+                        <li><a  href="menu.html">Menu</a></li>
+                        <li><a href="Order.html">Order</a></li>
+                        <li><a href="reservation.html">Rezervation</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a class="active-button active"  href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+
+                <div class="first-class-content">
+                    
+                    <h1 class="second-h1 rotate-scale-up">Contact</h1>
+                   
+                </div>
+                
+            </div>  
+        </header>
+      
+
+        <main>
+          <div class="main8">
+            <div class="container">
+              <h2 id="displayText1"></h2>
+              <div class="first-content-contact">
+                <h1>Send us a message</h1>
+                <div class="contact-form  offset-md-1 col-md-10 ">
+                  <form>
+                    <div class="row">
+                      <div class="col ">
+                        <label for="exampleInputEmail1">Name *</label>
+                        <input type="text" id="contactName" required class="form-control" placeholder="Name">
+                      </div>
+                      <div class="col ">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" id="contactEmail" class="form-control" placeholder="Email">
+                       
+                      </div>
+                      <div class="col ">
+                        <label for="exampleInputEmail1">Phone *</label>
+                        <input type="tel"  id="contacPhone"  class="form-control" required placeholder="Phone">
+                        <small id="emailHelp"  class="form-text text-muted">We'll never share your phone number with anyone else.</small>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <label for="exampleFormControlTextarea1"   >Message *</label>
+                        <textarea class="form-control" id="contactMsg" required placeholder="Message" rows="3"></textarea>
+                      </div>
+                  </div>
+                  <center>
+                    <button onclick="displayM()" class=" mt-5 text-center btn btn-light">Submit</button>
+                  </center>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="second-content-contact container">
+              <div class="row">
+                <div class="col-md-4">
+                  <h1>Location</h1>
+                  <p>Prishtine, rr.Naim Frasheri</p>
+                </div>
+                <div class="col-md-4">
+                  <h1>Call us</h1>
+                  <p>+383 44 123 456</p>
+                </div>
+                <div class="col-md-4">
+                  <h1>Opening hours</h1>
+                  <p>08:00 AM - 11:00 PM</p>
+                  <p>Every Day</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+           
+        </main>
+
+
+        <footer>
+            <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+
+                    <ul>
+                        <li class="first-li text-white">Contact</li>
+                        <li> +383 44 123 456</li>
+                        <li>fresh.food@gmail.com</li>
+                        <li>Prishtine, rr.Naim Frasheri</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li class="first-li text-white">About Us</li>
+                        <li>Since 1970</li>
+                        <li>Delicious food</li>
+                        <li>In costumer service</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                   <ul>
+                            <li class="first-li text-white">Social Networks</li>
+                            
+                            <li> 
+                                <a href="https://www.facebook.com/"> 
+                                <img class="social-icons" src="img/facebooklogo.png">
+                                 </a>
+                           
+                                <a href="https://www.instagram.com/">
+                                <img class="social-icons" src="img/instagramlogo.png">
+                                </a>
+                           
+                                <a href="https://www.linkedin.com/login">
+                                    <img class="social-icons" src="img/linkedinlogo.png">
+                                </a>
+                            </li>
+                            
+                        </ul>
+                </div>
+            </div>
+        </div>  
+        </footer>
+        
+
+    <script src="script.js"></script>
+</body>
+</html>
