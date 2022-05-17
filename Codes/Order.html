@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="mycss.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stlesheet" href="js/bootstrap.min.js">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<body>
+   
+    
+        <header >
+            
+            <div class=" first-class second-banner">
+             
+                
+                <nav class="navbar">
+                    <div class="brand-title"> <img class="logo" src="img/Logo.png" alt="logo"></div>
+                    <a href="#" class="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                    <div class="navbar-links">
+                        <ul>
+                            
+                            <li> <a  href="Myhtml.html"  >Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a class="active-button active" href="Order.html">Order</a></li>
+                            <li><a  href="reservation.html">Rezervation</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="first-class-content">
+                   
+                    <h1 class="second-h1 rotate-scale-up">Order Online</h1>
+                   
+                </div>
+                
+            </div>  
+        </header>
+        
+
+        <main>
+            <div class="main10">
+            
+            <div class="container ">
+                <h2 id="displayText"></h2>
+
+                    
+                    <div class="container-body">
+                        <div class="row">
+                            <div class="order-img col-md-7">
+                                <div class="img-cards1 col-md-4">
+                                    <div class="img-card card" >
+                                        <img src="img/image.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="card img-card" >
+                                        <img src="img/image4.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="card img-card" >
+                                        <img src="img/image2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="img-cards2 col-md-4">
+                                    <div class="img-card card" >
+                                        <img src="img/image13.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="card img-card" >
+                                        <img src="img/image15.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="card img-card" >
+                                        <img src="img/image16.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="img-cards3 col-md-4">
+                                    <div class="img-card card" >
+                                        <img src="img/image14.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="card img-card" >
+                                        <img src="img/image17.jpg" alt="">
+                                    </div>
+                                    
+                                    <div class="card img-card" >
+                                        <img src="img/image11.jpg" alt="">
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            
+                            <div class=" order-form col-md-4">
+                                <form>
+                                    <div class="row ">
+                                        <div class=" l-side pb-4 col-md-6">
+                                            <label for="type-order" class="form-label">Type of order *</label>
+                                        </div>
+                                        <div class=" r-side pb-4 col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                 Pick Up
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                  Delivery
+                                                </label>
+                                              </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class=" l-side pb-4 col-md-6">
+                                            <label for="type-order" class="form-label"  >Pick-Up/Delivery Date *</label>
+                                        </div>
+                                        <div class="r-side pb-4 col-md-6">
+                                            <input type="date" class="form-control" required id="deliveryDate" >  
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="l-side pb-4 col-md-6">
+                                            <label for="type-order" class="form-label">Pick-Up/Delivery Time *</label>
+                                        </div>
+                                        <div class="r-side pb-4 col-md-6">
+                                            <input type="time" class="form-control" required id="deliveryTime">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="l-side pb-4 col-md-6">
+                                            <label for="type-order" class="form-label" >Customer's Name *</label>
+                                        </div>
+                                        <div class="r-side pb-4 col-md-6">
+                                            <input type="text"  id="CustomerName"  class="form-control" required aria-label="First name" placeholder="First Name">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="l-side pb-4 col-md-6">
+                                            <label for="type-order" class="form-label">Customer's Email</label>
+                                        </div>
+                                        <div class="r-side pb-4 col-md-6">
+                                            <input type="email" class="form-control" autocomplete="off" placeholder="name@example.com">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="l-side pb-4 col-md-6">
+                                            <label for="type-order" class="form-label">Customer's Phone Number *</label>
+                                        </div>
+                                        <div class="r-side pb-4 col-md-6">
+                                            <input type="tel" class="form-control" id="CustomerPhone" required autocomplete="off" placeholder="+383-44123456">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="l-side pb-4 col-md-6">
+                                            <label for="type-order" class="form-label">Order Description *</label>
+                                        </div>
+                                        <div class="r-side pb-4 col-md-6">
+                                           
+                                            <textarea class="form-control" id="area"  required placeholder="Write what do you want to order" rows="3"></textarea>
+                                    </div>
+                                    <div class="row">
+                                   <div class="col-md-4">
+                                    
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button onclick="displayN()"   class="btn btn-light">Submit</button>
+                                        </div>
+                                </div>
+                                </form>
+                            </div>
+                            
+                        
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </main>
+
+
+        <footer>
+            <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+
+                    <ul>
+                        <li class="first-li text-white">Contact</li>
+                        <li> +383 44 123 456</li>
+                        <li>fresh.food@gmail.com</li>
+                        <li>Prishtine, rr.Naim Frasheri</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li class="first-li text-white">About Us</li>
+                        <li>Since 1970</li>
+                        <li>Delicious food</li>
+                        <li>In costumer service</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                   <ul>
+                            <li class="first-li text-white">Social Networks</li>
+                            
+                            <li> 
+                                <a href="https://www.facebook.com/"> 
+                                <img class="social-icons" src="img/facebooklogo.png">
+                                 </a>
+                           
+                                <a href="https://www.instagram.com/">
+                                <img class="social-icons" src="img/instagramlogo.png">
+                                </a>
+                           
+                                <a href="https://www.linkedin.com/login">
+                                    <img class="social-icons" src="img/linkedinlogo.png">
+                                </a>
+                            </li>
+                            
+                        </ul>
+                </div>
+            </div>
+        </div>  
+        </footer>
+        
+        <script>
+            
+        
+         </script>
+    <script src="js/bootstrap.bundle.min.js"> </script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

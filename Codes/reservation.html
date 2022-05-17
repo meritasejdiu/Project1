@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="mycss.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stlesheet" href="js/bootstrap.min.js">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+   
+    
+        <header >
+            
+            <div class=" first-class second-banner">
+             
+                
+                <nav class="navbar">
+                    <div class="brand-title"> <img class="logo" src="img/Logo.png" alt="logo"></div>
+                    <a href="#" class="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+                    <div class="navbar-links">
+                        <ul>
+                            
+                            <li> <a  href="Myhtml.html"  >Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="Order.html">Order</a></li>
+                            <li><a class="active-button active" href="reservation.html">Rezervation</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="first-class-content">
+                    
+                    <h1 class="second-h1 rotate-scale-up">book a table</h1>
+                   
+                </div>
+                
+            </div>  
+        </header>
+        
+
+        <main>
+            <div class="main10">
+
+            <div class="container book-form">
+                <h2 id="displayText2"></h2>
+                    
+                    <div class="container-body">
+                        <div class="row">
+                            <div class="reservation-form col-md-3">
+                                <form>
+                                    <div class="form-group">
+                                    <input type="text" class="form-control" id="rezName"autocomplete="off" placeholder="First Name">
+                                    </div>
+                                    <div class="form-group">
+                                    <input type="text" class="form-control" id="rezLName"autocomplete="off" placeholder="Last Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" autocomplete="off" placeholder="name@example.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" id="rezPhone"  class="form-control" autocomplete="off" placeholder="Phone">                             
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" id="rezNGuest"  class="form-control" min="1" max="20" placeholder="Number of Guests">                             
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="date" class="form-control" id="rezDate" >                             
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <input type="time" class="form-control" id="rezTime">                             
+                                    </div>
+                                    <button onclick="displayX()" class="btn btn-light">Submit</button>
+                                </form>
+                            </div>
+                            <div class="reservation-img col-md-8 ">
+                                <img src="Img/table.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+        </main>
+
+
+        <footer>
+            <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+
+                    <ul>
+                        <li class="first-li text-white">Contact</li>
+                        <li> +383 44 123 456</li>
+                        <li>fresh.food@gmail.com</li>
+                        <li>Prishtine, rr.Naim Frasheri</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li class="first-li text-white">About Us</li>
+                        <li>Since 1970</li>
+                        <li>Delicious food</li>
+                        <li>In costumer service</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                   <ul>
+                            <li class="first-li text-white">Social Networks</li>
+                            
+                            <li> 
+                                <a href="https://www.facebook.com/"> 
+                                <img class="social-icons" src="img/facebooklogo.png">
+                                 </a>
+                           
+                                <a href="https://www.instagram.com/">
+                                <img class="social-icons" src="img/instagramlogo.png">
+                                </a>
+                           
+                                <a href="https://www.linkedin.com/login">
+                                    <img class="social-icons" src="img/linkedinlogo.png">
+                                </a>
+                            </li>
+                            
+                        </ul>
+                </div>
+            </div>
+        </div>  
+        </footer>
+        
+
+    
+</body>
+</html>
